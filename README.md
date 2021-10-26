@@ -14,13 +14,13 @@ This application will allow you to filter trhough images of various horned creat
 
   - Voting for Images
   - Estimated: 60 min
-  - Start Time: 3:50
-  - End Time: 
-  - Actual Time: 
+  - Start Time: 4:00
+  - End Time: 4:42
+  - Actual Time: 42min
 
   - Bootstrap Features
   - Estimated: 45 min
-  - Start Time:
+  - Start Time: 4:45
   - End Time: 
   - Actual Time: 
 
