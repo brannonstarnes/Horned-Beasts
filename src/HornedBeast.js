@@ -1,5 +1,6 @@
 import { Component } from "react";
 import heart from './assets/heartIcon.png';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends Component {
     
@@ -19,19 +20,27 @@ handleClick = () => {
     render(){
         return(
             <>
-            <h2>{this.props.title}</h2>
-            <img 
-                src={this.props.imgUrl} 
-                alt={this.props.title} 
-                title={this.props.title}
-                onClick={this.handleClick}
-            />
-            <p>{this.props.description}</p>
-            <p>
-                <img src={heart} alt= 'favorites icon'/>: {this.state.votes}</p>
-            </>
+            <Card style={{ width: '18rem' }}>
+              <Card.Img 
+              variant="top"
+              src={this.props.imgUrl}
+              alt={this.props.keyword}
+              title={this.props.title}
+              />
+              <Card.Body>
+                <Card.Title>
+                    {this.props.title}
+                </Card.Title>
+                <Card.Text>
+                    {this.props.description}
+                </Card.Text>
+    
+  </Card.Body>
+</Card>
+        </>    
         )
     }
 }
 
 export default HornedBeast;
+
