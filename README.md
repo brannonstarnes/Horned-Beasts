@@ -8,13 +8,13 @@ This application will allow you to filter trhough images of various horned creat
 
 - Displaying Images
   - Estimated: 30 min
-  - Start Time:
-  - End Time: 
-  - Actual Time: 
+  - Start Time: 2:50
+  - End Time: 3:50
+  - Actual Time: 60min
 
   - Voting for Images
   - Estimated: 60 min
-  - Start Time:
+  - Start Time: 3:50
   - End Time: 
   - Actual Time: 
 
@@ -24,4 +24,3 @@ This application will allow you to filter trhough images of various horned creat
   - End Time: 
   - Actual Time: 
 
-  
