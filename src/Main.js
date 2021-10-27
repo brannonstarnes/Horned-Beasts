@@ -8,15 +8,15 @@ import data from "./data.json";
 class Main extends Component {
     render(){
         return(
-            <>
-                {data.map((beast) => ( 
-                <HornedBeast 
-                title={beast.title} 
-                imgUrl={beast.image_url} 
-                description= {beast.description}
-                keyword= {beast.keyword}
-                horns= {beast.horns}/>
-                ))}</>
+          <>
+            <Container id = 'mainBox'>
+              <Row xs={1} sm={2} md={3} lg={4}>
+                {data.map(beast => (
+                  <HornedBeast beast={beast} />
+                ))}  
+              </Row>
+            </Container>
+          </>
         )
     }
 }

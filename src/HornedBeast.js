@@ -4,7 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
-class HornedBeast extends Component {
+
+export default class HornedBeast extends Component {
     
     constructor(props){
         super(props);
@@ -12,36 +13,31 @@ class HornedBeast extends Component {
             votes: 0,
         }
     }
-    //define a handle click function
-handleClick = () => {
+    
+
+  handleClick = () => {
     //increase votes when clicked
     this.setState({ votes: this.state.votes + 1 });
     console.log("Beast Clicked!")
-}
+  }
 
     render(){
+        
         return(
-        <Container>
+          <Container>
             <Card id='beastCard' style={{ width: '18rem' }}>
-              <Card.Img 
+            <Card.Img 
               variant="top"
-              src={this.props.imgUrl}
-              alt={this.props.keyword}
-              title={this.props.title}/>
-              <Card.Body>
-                <Card.Title>
-                    {this.props.title}
-                </Card.Title>
-                <Card.Text>
-                    {this.props.description}
-                </Card.Text>
-                <Button variant='primary' onClick={this.handleClick} alt='heart icon'><img src= {heart}></img> : {this.state.votes}</Button>
-              </Card.Body>
+              src={this.props.beast.image_url}
+              alt={this.props.beast.description}
+              title={this.props.beast.title}/>
+            <Card.Body>
+            <Card.Title>{this.props.beast.title}</Card.Title>
+            <Card.Text>{this.props.beast.description}</Card.Text>
+              <Button variant='primary' onClick={this.handleClick} alt='heart icon'>❤️: {this.state.votes}</Button>
+            </Card.Body>
             </Card>
-        </Container>    
+          </Container>
         )
     }
 }
-
-export default HornedBeast;
-
