@@ -1,12 +1,14 @@
 import { Component } from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import HornedBeast from "./HornedBeast";
 import data from "./data.json";
-import CardGroup from 'react-bootstrap/CardGroup';
+
 
 class Main extends Component {
     render(){
         return(
-            <CardGroup>
+            <>
                 {data.map((beast) => ( 
                 <HornedBeast 
                 title={beast.title} 
@@ -14,8 +16,7 @@ class Main extends Component {
                 description= {beast.description}
                 keyword= {beast.keyword}
                 horns= {beast.horns}/>
-                ))}
-            </CardGroup>
+                ))}</>
         )
     }
 }
