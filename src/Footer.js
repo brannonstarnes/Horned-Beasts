@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 class Footer extends Component{ 
     render(){
       return(
-        <Navbar bg='primary' fixed="bottom">
+        <Navbar bg='primary'>
           <Container>
         <h2>Author: Brannon Starnes</h2>
           </Container>

@@ -6,21 +6,28 @@ This application will allow you to filter trhough images of various horned creat
 
 ## Time Estimates 
 
+### Lab 2
 - Displaying Images
   - Estimated: 30 min
   - Start Time: 2:50
   - End Time: 3:50
   - Actual Time: 60min
 
-  - Voting for Images
+- Voting for Images
   - Estimated: 60 min
   - Start Time: 4:00
   - End Time: 4:42
   - Actual Time: 42min
 
-  - Bootstrap Features
+- Bootstrap Features
   - Estimated: 45 min
   - Start Time: 4:45
   - End Time: 
   - Actual Time: 
 
+### Lab 3
+- Displaying Image Modal
+  - Estimated: 45 min
+  - Start Time: 2:30
+  - End Time: 
+  - Actual Time: 
