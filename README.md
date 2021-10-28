@@ -22,12 +22,12 @@ This application will allow you to filter trhough images of various horned creat
 - Bootstrap Features
   - Estimated: 45 min
   - Start Time: 4:45
-  - End Time: 
-  - Actual Time: 
+  - End Time: 5:45
+  - Actual Time: 60 min
 
 ### Lab 3
 - Displaying Image Modal
   - Estimated: 45 min
   - Start Time: 2:30
-  - End Time: 
-  - Actual Time: 
+  - End Time: 8:20
+  - Actual Time: 6 hours!
