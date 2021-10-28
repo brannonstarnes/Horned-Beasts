@@ -28,6 +28,7 @@ This application will allow you to filter trhough images of various horned creat
 ### Lab 3
 - Displaying Image Modal
   - Estimated: 45 min
-  - Start Time: 2:30
+  - Start Time: 2:20
   - End Time: 8:20
-  - Actual Time: 6 hours!
+  - Actual Time: 6 hours
+

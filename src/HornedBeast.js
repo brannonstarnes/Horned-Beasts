@@ -1,5 +1,4 @@
 import { Component } from "react";
-import heart from './assets/heartIcon.png';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
