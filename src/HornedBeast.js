@@ -22,16 +22,21 @@ export default class HornedBeast extends Component {
     console.log("Beast Clicked!")
   }
 
-     render(){
+  handleImgClick = () => {
+    this.props.chooseBeast(this.props.beastProfile);
+  }
+     
+  render(){
         
         return(
           <><Container>
-            <Card id='beastCard' style={{ width: '18rem' }}>
+            <Card id='beastCard' bg='info' border='secondary' style={{ width: '18rem' }}>
               <Card.Img
                 variant="top"
                 src={this.props.beastProfile.image_url}
                 alt={this.props.beastProfile.description}
-                title={this.props.beastProfile.title} />
+                title={this.props.beastProfile.title} 
+                onClick={this.handleImgClick}/>
               <Card.Body>
                 <Card.Title>{this.props.beastProfile.title}</Card.Title>
                 <Card.Text>{this.props.beastProfile.description}</Card.Text>

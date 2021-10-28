@@ -10,15 +10,19 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
-      show: false
+      show: false,
+      chosenBeast: null
     }
 }
 
-  chooseBeast = () => {
+  chooseBeast = (beastProfile) => {
     this.setState({
-      show: true
+      show: true,
+      chosenBeast: beastProfile
     })
   };
+
+
 
   hideModal = () => {
     this.setState({ 
@@ -32,11 +36,11 @@ class Main extends Component {
             <Container id = 'mainBox'>
               <Row xs={1} sm={2} md={3} lg={4}>
                 {this.props.beastData.map(beast => (
-                  <HornedBeast beastProfile ={beast} />
+                  <HornedBeast beastProfile ={beast} chooseBeast={this.chooseBeast}/>
                 ))}  
               </Row>
             </Container>
-            <ImageModal show={this.state.show} hideModal={this.hideModal}></ImageModal>
+            <ImageModal show={this.state.show} chosenBeast={this.state.chosenBeast} hideModal={this.hideModal}></ImageModal>
           </>
         )
     }
