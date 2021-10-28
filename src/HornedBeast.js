@@ -1,46 +1,50 @@
 import { Component } from "react";
 import heart from './assets/heartIcon.png';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
-class HornedBeast extends Component {
+
+export default class HornedBeast extends Component {
     
     constructor(props){
         super(props);
         this.state = {
             votes: 0,
+            show: 'false'
         }
     }
-    //define a handle click function
-handleClick = () => {
+    
+
+  handleClick = () => {
     //increase votes when clicked
     this.setState({ votes: this.state.votes + 1 });
     console.log("Beast Clicked!")
-}
+  }
 
-    render(){
+  handleImgClick = () => {
+    this.props.chooseBeast(this.props.beastProfile);
+  }
+     
+  render(){
+        
         return(
-            <>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img 
-              variant="top"
-              src={this.props.imgUrl}
-              alt={this.props.keyword}
-              title={this.props.title}
-              />
+          <><Container>
+            <Card id='beastCard' bg='info' border='secondary' style={{ width: '18rem' }}>
+              <Card.Img
+                variant="top"
+                src={this.props.beastProfile.image_url}
+                alt={this.props.beastProfile.description}
+                title={this.props.beastProfile.title} 
+                onClick={this.handleImgClick}/>
               <Card.Body>
-                <Card.Title>
-                    {this.props.title}
-                </Card.Title>
-                <Card.Text>
-                    {this.props.description}
-                </Card.Text>
-    
-  </Card.Body>
-</Card>
-        </>    
+                <Card.Title>{this.props.beastProfile.title}</Card.Title>
+                <Card.Text>{this.props.beastProfile.description}</Card.Text>
+                <Button variant='primary' onClick={this.handleClick} alt='heart icon'>❤️: {this.state.votes}</Button>
+              </Card.Body>
+            </Card>
+          </Container></>
+          
         )
     }
 }
-
-export default HornedBeast;
-
