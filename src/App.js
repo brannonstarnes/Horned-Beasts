@@ -37,24 +37,24 @@ handleChange = (e) => {
   let filteredBeastData;
 
   if (filterSelect === '1'){
-    filteredBeastData = this.state.beastData.filter(beast => beast.horns === 1);
+    filteredBeastData = data.filter(beast => beast.horns === 1);
     this.setState({beastData: filteredBeastData});
   } else if (filterSelect === '2'){
-    filteredBeastData = this.state.beastData.filter(beast => beast.horns === 2);
+    filteredBeastData = data.filter(beast => beast.horns === 2);
     this.setState({beastData: filteredBeastData});
 
   } else if (filterSelect === '3'){
-    filteredBeastData = this.state.beastData.filter(beast => beast.horns === 3);
+    filteredBeastData = data.filter(beast => beast.horns === 3);
     this.setState({beastData: filteredBeastData});
 
   } else if (filterSelect === '100'){
-    filteredBeastData = this.state.beastData.filter(beast => beast.horns === 100);
+    filteredBeastData = data.filter(beast => beast.horns === 100);
     this.setState({beastData: filteredBeastData});
 
   } else{
-    this.setState({beastData: {data}})
+    this.setState({beastData: data})
     console.log('heyoo');
-};
+  };
 };
 
   render() {

@@ -17,7 +17,7 @@ export default class hornSelectForm extends Component {
               <option value="2">Two 🦄🦄</option>
               <option value="3">Three 🦄🦄🦄</option>
               <option value="100">Much Horns! 💯</option>
-              <option value="all">See All Beasts</option>
+              <option value="">See All Beasts</option>
             </Form.Select>
           </FloatingLabel>
           </>

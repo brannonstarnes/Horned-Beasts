@@ -13,8 +13,8 @@ class Main extends Component {
           <>
             <Container id = 'mainBox'>
               <Row xs={1} sm={2} md={3} lg={4}>
-                {this.props.beastData.map(beast => (
-                  <HornedBeast beastProfile ={beast} chooseBeast={this.props.chooseBeast}/>
+                {this.props.beastData.map((beast, idx) => (
+                  <HornedBeast key={idx} beastProfile ={beast} chooseBeast={this.props.chooseBeast}/>
                 ))}  
               </Row>
             </Container>
