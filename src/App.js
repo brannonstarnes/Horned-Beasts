@@ -13,7 +13,6 @@ export default class App extends Component {
     this.state = {
       show: false,
       chosenBeast: {},
-      hornsWanted: {},
       beastData: data
     }
 } 

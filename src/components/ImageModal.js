@@ -13,7 +13,7 @@ export default class ImageModal extends Component {
     render() {
         return (
             <>
-              <Modal show={this.props.show} onHide={this.handleClose}>
+              <Modal show={this.props.show} keyboard= 'true' backdrop='static' centered onHide={this.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>{this.props.chosenBeast.title}</Modal.Title>
                 </Modal.Header>
