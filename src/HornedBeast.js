@@ -2,7 +2,7 @@ import { Component } from "react";
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-
+import './card.css';
 
 export default class HornedBeast extends Component {
     
@@ -28,8 +28,8 @@ export default class HornedBeast extends Component {
   render(){
         
         return(
-          <><Container>
-            <Card id='beastCard' bg='info' border='secondary' style={{ width: '18rem' }}>
+          
+            <Card id='beastCard' bg='info' border='primary' style={{ width: '18rem' }}>
               <Card.Img
                 variant="top"
                 src={this.props.beastProfile.image_url}
@@ -41,9 +41,7 @@ export default class HornedBeast extends Component {
                 <Card.Text>{this.props.beastProfile.description}</Card.Text>
                 <Button variant='primary' onClick={this.handleClick} alt='heart icon'>❤️: {this.state.votes}</Button>
               </Card.Body>
-            </Card>
-          </Container></>
-          
+            </Card>       
         )
     }
 }
