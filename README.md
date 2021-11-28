@@ -2,7 +2,7 @@
 
 ## Description
 
-This application will allow you to filter trhough images of various horned creatures by number of horns and vote for your favorite image.
+This application will allow you to filter through images of various horned creatures by number of horns and vote for your favorite image.
 
 ## Time Estimates 
 
